@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>mission5-01</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+            background-color:skyblue;
+            color: whitesmoke;
+        }
+        
+        button{
+            width: 100px;
+            height: 100px;
+            color: whitesmoke;
+            font-size: x-large;
+            font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        }
+    </style>
+    <center>
+        <div id="calculator" style="font-size: 50px;">かんたん電卓</div>
+        <input style="font-size: 50px; text-align: right;" /><br><br>
+        <script src="mission_5-01.js"></script>
+    
+        <button onclick="update( '' ) " style="background-color: gray;">AC</button>
+        <button onclick="append( '**' )" style="background-color: gray;">^</button>
+        <button onclick="append( '**0.5' )" style="background-color: gray;">√</button>
+        <button onclick="append( '/' )" style="background-color: orange;">÷</button><br>
+
+        <button onclick="append( '7' )" style="background-color: black;">7</button>
+        <button onclick="append( '8' )" style="background-color: black;">8</button>
+        <button onclick="append( '9' )" style="background-color: black;">9</button>
+        <button onclick="append( '*' )" style="background-color: orange;">×</button><br>
+        
+        <button onclick="append( '4' )" style="background-color: black;">4</button>
+        <button onclick="append( '5' )" style="background-color: black;">5</button>
+        <button onclick="append( '6' )" style="background-color: black;">6</button>
+        <button onclick="append( '-' )" style="background-color: orange;">－</button><br>
+
+        <button onclick="append( '1' )" style="background-color: black;">1</button>
+        <button onclick="append( '2' )" style="background-color: black;">2</button>
+        <button onclick="append( '3' )" style="background-color: black;">3</button>
+        <button onclick="append( '+' )" style="background-color: orange;">＋</button><br>
+        
+        <button onclick="append( '0' )" style="background-color: black; width:205px;">0</button>
+        <button onclick="append( '.' )" style="background-color: black;">.</button>
+        <button onclick="calc()" style="background-color: orange;">＝</button>
+    </center>
+</body>
+
+</html>
